@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animations Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .box,
+        .ball,
+        .text {
+            margin: 30px auto;
+        }
+
+
+        /* 1. Moving Box */
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: royalblue;
+
+            animation: moveBox 3s infinite alternate;
+        }
+
+        @keyframes moveBox {
+            from {
+                transform: translateX(-200px);
+            }
+
+            to {
+                transform: translateX(200px);
+            }
+        }
+
+
+        /* 2. Bouncing Ball */
+        .ball {
+            width: 60px;
+            height: 60px;
+            background-color: orange;
+            border-radius: 50%;
+
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(150px);
+            }
+        }
+
+
+        /* 3. Fading Text */
+        .text {
+            font-size: 30px;
+            font-weight: bold;
+
+            animation: fadeText 2s infinite alternate;
+        }
+
+        @keyframes fadeText {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation Practice</h1>
+
+    <!-- Moving Box -->
+    <h2>1. Moving Box ➡️</h2>
+    <div class="box"></div>
+
+
+    <!-- Bouncing Ball -->
+    <h2>2. Bouncing Ball ⚽</h2>
+    <div class="ball"></div>
+
+
+    <!-- Fading Text -->
+    <h2>3. Fading Text ✨</h2>
+    <div class="text">
+        Welcome to My Website!
+    </div>
+
+</body>
+</html>

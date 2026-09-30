@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Responsive Website</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Responsive Website</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Website Structure</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Website Design</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Website Functionality</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

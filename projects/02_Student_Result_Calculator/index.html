@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="result-card">
+
+            <h1>Student Result Calculator</h1>
+
+            <p class="subtitle">
+                Enter marks for five subjects
+            </p>
+
+
+            <!-- Student Name -->
+
+            <label for="studentName">Student Name</label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- English -->
+
+            <label for="english">English</label>
+
+            <input
+                type="number"
+                id="english"
+                placeholder="Enter marks"
+                min="0"
+                max="100"
+            >
+
+
+            <!-- Maths -->
+
+            <label for="maths">Mathematics</label>
+
+            <input
+                type="number"
+                id="maths"
+                placeholder="Enter marks"
+                min="0"
+                max="100"
+            >
+
+
+            <!-- Science -->
+
+            <label for="science">Science</label>
+
+            <input
+                type="number"
+                id="science"
+                placeholder="Enter marks"
+                min="0"
+                max="100"
+            >
+
+
+            <!-- Computer -->
+
+            <label for="computer">Computer Science</label>
+
+            <input
+                type="number"
+                id="computer"
+                placeholder="Enter marks"
+                min="0"
+                max="100"
+            >
+
+
+            <!-- Social -->
+
+            <label for="social">Social Studies</label>
+
+            <input
+                type="number"
+                id="social"
+                placeholder="Enter marks"
+                min="0"
+                max="100"
+            >
+
+
+            <!-- Calculate Button -->
+
+            <button onclick="calculateResult()">
+                Calculate Result
+            </button>
+
+
+            <!-- Result -->
+
+            <div id="result" class="result">
+
+                <h2>Result</h2>
+
+                <p id="studentResult"></p>
+
+                <p id="total"></p>
+
+                <p id="average"></p>
+
+                <p id="grade"></p>
+
+                <p id="status"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <br><br>
+
+            <label for="course">Course:</label>
+
+            <select id="course" name="course">
+                <option value="">Select Course</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="aiml">AI & ML</option>
+            </select>
+
+            <br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="javascript"> JavaScript
+
+            <br><br>
+
+            <label for="address">Address:</label>
+            <br>
+
+            <textarea id="address" name="address" rows="5" cols="30"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Student Registration</p>
+    </footer>
+
+</body>
+
+</html>
+

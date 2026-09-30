@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Development Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="quiz-container">
+
+        <div class="quiz-card">
+
+
+            <!-- HEADER -->
+
+            <div class="quiz-header">
+
+                <h1>Web Development Quiz</h1>
+
+                <p>
+                    Test your HTML, CSS and JavaScript knowledge
+                </p>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="progress-section">
+
+                <div class="progress-info">
+
+                    <span id="questionNumber">
+                        Question 1 of 10
+                    </span>
+
+                    <span id="progressPercent">
+                        10%
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div id="progressFill"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUESTION -->
+
+            <div class="question-section">
+
+                <h2 id="question">
+                    Question will appear here
+                </h2>
+
+            </div>
+
+
+            <!-- ANSWERS -->
+
+            <div
+                id="answerButtons"
+                class="answer-buttons"
+            >
+
+                <button class="answer-button"></button>
+
+                <button class="answer-button"></button>
+
+                <button class="answer-button"></button>
+
+                <button class="answer-button"></button>
+
+            </div>
+
+
+            <!-- NEXT BUTTON -->
+
+            <button
+                id="nextButton"
+                class="next-button"
+            >
+                Next Question →
+            </button>
+
+
+            <!-- RESULT -->
+
+            <div
+                id="result"
+                class="result"
+            >
+
+                <div class="result-icon">
+                    🎉
+                </div>
+
+                <h2>
+                    Quiz Completed!
+                </h2>
+
+                <p id="score"></p>
+
+                <p id="message"></p>
+
+                <p
+                    id="remainingQuestions"
+                    class="remaining"
+                ></p>
+
+                <button
+                    id="restartButton"
+                    class="restart-button"
+                >
+                    🔄 Start New Quiz
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

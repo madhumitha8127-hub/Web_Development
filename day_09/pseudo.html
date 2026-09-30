@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Classes</title>
+
+    <style>
+        button {
+            padding: 12px 25px;
+            border: none;
+            background: orange;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        h2::before {
+            content: "★ ";
+        }
+
+        h2::after {
+            content: " ★";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Classes & Elements</h1>
+
+    <h2>My Website</h2>
+
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <button>focus</button>
+
+</body>
+</html>

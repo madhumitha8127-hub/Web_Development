@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Pseudo Elements</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* ::before */
+
+        .skills::before {
+            content: "* ";
+            color: orange;
+        }
+
+        /* ::after */
+
+        .skills::after {
+            content: " *";
+            color: orange;
+        }
+
+        /* ::first-letter */
+
+        .about::first-letter {
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ::first-line */
+
+        .description::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: white;
+            width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #ccc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Pseudo Elements</h1>
+
+    <div class="card">
+
+        <h2 class="skills">My Skills</h2>
+
+        <p class="about">
+            I am a B.Tech CSE student learning web development.
+        </p>
+
+        <p class="description">
+            I am learning HTML, CSS and JavaScript.
+            I am also practicing DSA to prepare for internships.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

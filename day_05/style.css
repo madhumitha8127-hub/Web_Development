@@ -1,0 +1,99 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+
+    /* Center the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 350px;
+
+    /* Box Model */
+    padding: 50px;
+    margin: 20px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #333;
+
+    margin-bottom: 15px;
+}
+
+/* Name */
+.profile-card h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+/* Course */
+.profile-card h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Year */
+.year {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* About */
+.about {
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #444;
+}

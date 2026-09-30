@@ -1,0 +1,32 @@
+body {
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: orange;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
